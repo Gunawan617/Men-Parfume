@@ -1,186 +1,23 @@
-🕶️ Men Parfume — Premium React Landing Page
+# 🕶️ Men Parfume — Premium React Landing Page
 
-Website landing page parfum pria premium dengan React + Contentful CMS.
-Dibangun menggunakan framework AIDA (Attention, Interest, Desire, Action) untuk meningkatkan konversi penjualan.
+Website landing page parfum pria premium berbasis **React + Contentful CMS** dengan struktur AIDA (Attention, Interest, Desire, Action) untuk meningkatkan konversi penjualan.
 
-🚀 Demo & Preview
+## 🚀 Fitur
+- Design premium (brown & gold luxury theme)
+- Fully responsive (mobile, tablet, desktop)
+- Produk dinamis dari Contentful CMS
+- Modal detail produk
+- Struktur landing page siap jualan
+- Clean & modern UI
 
-Landing page profesional dengan:
+## 🛠️ Tech Stack
+- React 18
+- Contentful CMS
+- CSS Modern (Flexbox/Grid)
+- Responsive Design
 
-desain premium coklat–gold
+## 📦 Instalasi
 
-produk dinamis dari Contentful
-
-responsive all device
-
-struktur siap jualan
-
-✨ Fitur Utama
-🎨 Design & UX
-
-Flat premium design (brown & gold luxury palette)
-
-Fully responsive (mobile, tablet, desktop)
-
-Smooth animation & modern UI
-
-Clean typography & premium feel
-
-🧠 AIDA Structure (Sales Psychology)
-
-Website sudah disusun dengan flow marketing:
-
-Hero → Attention
-
-Why Us → Interest
-
-Product → Desire
-
-Testimonials → Trust
-
-CTA → Action
-
-Footer → Closing & contact
-
-Cocok untuk:
-
-brand parfum
-
-fashion
-
-produk premium
-
-portfolio jualan
-
-🛠️ Tech Stack
-
-React 18
-
-Contentful CMS
-
-CSS Modern (no bootstrap heavy)
-
-Responsive Flex/Grid
-
-AIDA copywriting structure
-
-📦 Instalasi
-1. Masuk folder project
-cd c:\Users\gunaw\Videos\parfume
-
-2. Install dependencies
+```bash
 npm install
-
-3. Jalankan project
 npm start
-
-
-Buka di browser:
-
-http://localhost:3000
-
-4. Build production
-npm run build
-
-📁 Struktur Project
-src/
- ├── components/
- │   ├── Header.jsx
- │   ├── Hero.jsx
- │   ├── Why.jsx
- │   ├── ProductList.jsx
- │   ├── Testimonials.jsx
- │   ├── CTA.jsx
- │   └── Footer.jsx
- │
- ├── services/
- │   └── contentful.js
- │
- ├── styles/
- │   └── global.css
- │
- ├── App.jsx
- └── index.js
-
-🔥 Integrasi Contentful CMS
-
-Produk diambil otomatis dari Contentful.
-
-Content Type wajib:
-
-perfumes
-
-Fields:
-
-name (text)
-
-description (text)
-
-price (number/text)
-
-image (media)
-
-Credentials:
-Space ID : wxcq3jwnguc8
-Access Token : (private)
-
-
-⚠️ Jangan upload token ke repo public!
-
-🎨 Custom Warna Website
-
-Edit di:
-
-src/styles/global.css
-
-:root {
-  --brown-primary: #8B6F47;
-  --brown-dark: #5C4A34;
-  --brown-light: #C4A586;
-  --gold: #D4AF37;
-}
-
-📱 Responsive Support
-
-Tested:
-
-Mobile
-
-Tablet
-
-Desktop
-
-Large screen
-
-🧠 Cocok Untuk Portfolio
-
-Project ini cocok dimasukin ke:
-
-CV frontend
-
-portfolio programmer
-
-freelance web jualan
-
-apply kerja web dev
-
-💎 Upgrade Selanjutnya (Roadmap)
-
-Next improvement kalau mau dijual:
-
-Cart system
-
-Checkout WhatsApp
-
-Payment gateway
-
-Admin dashboard
-
-Auth login
-
-Dark luxury animation
-
-SEO optimization
-
-👨‍💻 Author
-
