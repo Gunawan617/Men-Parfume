@@ -13,16 +13,16 @@ const Footer = () => {
               Setiap botol adalah pernyataan kepercayaan diri Anda.
             </p>
             <div className="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
                 <i className="fab fa-facebook"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" title="TikTok">
+              <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" title="TikTok">
                 <i className="fab fa-tiktok"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" title="YouTube">
+              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
                 <i className="fab fa-youtube"></i>
               </a>
             </div>
@@ -41,10 +41,10 @@ const Footer = () => {
           <div className="footer-section">
             <h5>Layanan Pelanggan</h5>
             <ul>
-              <li><a href="#">Hubungi Kami</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Kebijakan Privasi</a></li>
-              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="/contact">Hubungi Kami</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/privacy">Kebijakan Privasi</a></li>
+              <li><a href="/terms">Syarat & Ketentuan</a></li>
             </ul>
           </div>
 
