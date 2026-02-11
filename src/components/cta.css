@@ -1,0 +1,309 @@
+.cta {
+  background: linear-gradient(135deg, #5C4A34 0%, #8B6F47 50%, #5C4A34 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.cta::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.cta-text h2 {
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.cta-text p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.cta-benefits {
+  list-style: none;
+  padding: 0;
+}
+
+.cta-benefits li {
+  color: rgba(255, 255, 255, 0.95);
+  padding: 12px 0;
+  padding-left: 35px;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cta-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #D4AF37;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+/* ===== FORM ===== */
+.cta-form {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideInRight 0.8s ease-out;
+}
+
+.cta-form h3 {
+  font-size: 1.8rem;
+  color: #2C1810;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #E6D7C3;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #2C1810;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #8B6F47;
+  box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+}
+
+.btn-full {
+  width: 100%;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.form-note {
+  font-size: 0.85rem;
+  color: #999;
+  text-align: center;
+  margin: 0;
+}
+
+/* ===== URGENCY BOX ===== */
+.cta-urgency {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+}
+
+.urgency-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.urgency-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #D4AF37, #C4A586);
+  color: #2C1810;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.urgency-box p {
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.clock {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #D4AF37;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 4px;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 1024px) {
+  .cta-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 60px 0;
+  }
+
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cta-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+  }
+
+  .cta-form {
+    padding: 30px;
+  }
+
+  .cta-form h3 {
+    font-size: 1.4rem;
+  }
+
+  .urgency-box p {
+    font-size: 1.1rem;
+  }
+
+  .clock {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 40px 0;
+  }
+
+  .cta-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .cta-text p {
+    font-size: 0.95rem;
+  }
+
+  .cta-benefits li {
+    font-size: 0.9rem;
+    padding-left: 30px;
+  }
+
+  .cta-form {
+    padding: 20px;
+  }
+
+  .cta-form h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .cta-urgency {
+    padding: 25px;
+  }
+
+  .urgency-badge {
+    font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .urgency-box p {
+    font-size: 1rem;
+  }
+
+  .clock {
+    font-size: 1.6rem;
+  }
+}
